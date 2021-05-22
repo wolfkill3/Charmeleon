@@ -45,7 +45,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
@@ -102,6 +102,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.RestServiceApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GreetingControllerTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rest-service" />
       <extension name="coverage">
@@ -155,7 +166,7 @@
       <workItem from="1621365692533" duration="2322000" />
       <workItem from="1621451034442" duration="393000" />
       <workItem from="1621451443932" duration="496000" />
-      <workItem from="1621669941382" duration="868000" />
+      <workItem from="1621669941382" duration="1566000" />
     </task>
     <servers />
   </component>
@@ -196,6 +207,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1621451709100" />
+    <state x="644" y="310" key="Github.ShareDialog" timestamp="1621671501914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="644" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1621671501914" />
+    <state x="451" y="117" key="Github.UntrackedFilesDialog" timestamp="1621671519165">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="451" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621671519165" />
     <state width="1232" height="255" key="GridCell.Tab.0.bottom" timestamp="1621368756493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
