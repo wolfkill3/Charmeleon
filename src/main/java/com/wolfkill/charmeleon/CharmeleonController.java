@@ -1,4 +1,4 @@
-package com.wolfkill.restservice;
+package com.wolfkill.charmeleon;
 
 import java.util.logging.Logger;
 
@@ -12,25 +12,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
 @RestController
-public class ChameleonController {
+public class CharmeleonController {
     @Autowired
     private UserRepository userRepository;
-    private Logger logger = Logger.getLogger(ChameleonController.class.getName());
+    private Logger logger = Logger.getLogger(CharmeleonController.class.getName());
 
     @PostMapping("/auth")
-    public ChameleonAuthResponse authResponse(
+    public CharmeleonAuthResponse authResponse(
         @RequestParam(value = "login") String login,
         @RequestParam(value = "password") String password) {
         logger.info("login = " + login);
         logger.info("password = " + password);
-        return new ChameleonAuthResponse(login, password);
+        return new CharmeleonAuthResponse(login, password);
     }
 
     @PostMapping("/auth-config")
-    public ChameleonAuthResponse authResponseConfig(
+    public CharmeleonAuthResponse authResponseConfig(
         @RequestParam(required = false, value = "login") String login,
         @RequestParam(required = false, value = "password") String password) {
-        return new ChameleonAuthResponse(login, password);
+        return new CharmeleonAuthResponse(login, password);
     }
 
     @PostMapping(path = "/add")

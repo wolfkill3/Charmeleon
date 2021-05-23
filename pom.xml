@@ -11,8 +11,8 @@
 	<groupId>com.wolfkill</groupId>
 	<artifactId>chameleon-rest-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Chameleon</name>
-	<description>Chameleon</description>
+	<name>Charmeleon</name>
+	<description>Charmeleon</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>

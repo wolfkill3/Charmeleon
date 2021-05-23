@@ -1,4 +1,4 @@
-package com.wolfkill.restservice;
+package com.wolfkill.charmeleon;
 
 import java.util.*;
 
@@ -9,10 +9,10 @@ import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
-public class ChameleonApplication {
+public class CharmeleonApplication {
 
     public static void main(String[] args) {
-        SpringApplication application = new SpringApplication(ChameleonApplication.class);
+        SpringApplication application = new SpringApplication(CharmeleonApplication.class);
         application.setDefaultProperties(Collections.singletonMap("server.port", "8083"));
         application.run(args);
     }

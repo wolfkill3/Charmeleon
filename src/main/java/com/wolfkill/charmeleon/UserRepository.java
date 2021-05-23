@@ -1,4 +1,4 @@
-package com.wolfkill.restservice;
+package com.wolfkill.charmeleon;
 
 import org.springframework.data.repository.CrudRepository;
 
