@@ -21,6 +21,12 @@ public class ChameleonController {
         return new ChameleonResponse(counter.incrementAndGet(), String.format(template, name));
     }
 
+    @PostMapping("/auth")
+    public ChameleonAuthResponse authResponse(@RequestParam(value = "login") String login, @RequestParam(value = "password") String password) {
+        System.out.println(login + "   " + password);
+        return new ChameleonAuthResponse(login, password);
+    }
+
     @PostMapping(path = "/add")
     public @ResponseBody
     String addNewUser(@RequestParam String link
