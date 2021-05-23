@@ -22,7 +22,8 @@ body {
 
 .preview-img{
     width: 400px;
-    margin: 50px auto auto;
+    margin: 50px auto -97px 459px;
+
 }
 
 .auth {
