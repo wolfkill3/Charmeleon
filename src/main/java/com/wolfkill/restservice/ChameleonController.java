@@ -1,29 +1,35 @@
 package com.wolfkill.restservice;
 
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+@CrossOrigin
 @RestController
 public class ChameleonController {
     @Autowired
     private UserRepository userRepository;
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
-    @GetMapping("/inform")
-    public ChameleonResponse greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-        return new ChameleonResponse(counter.incrementAndGet(), String.format(template, name));
-    }
+    private Logger logger = Logger.getLogger(ChameleonController.class.getName());
 
     @PostMapping("/auth")
-    public ChameleonAuthResponse authResponse(@RequestParam(value = "login") String login, @RequestParam(value = "password") String password) {
-        System.out.println(login + "   " + password);
+    public ChameleonAuthResponse authResponse(
+        @RequestParam(value = "login") String login,
+        @RequestParam(value = "password") String password) {
+        logger.info("login = " + login);
+        logger.info("password = " + password);
+        return new ChameleonAuthResponse(login, password);
+    }
+
+    @PostMapping("/auth-config")
+    public ChameleonAuthResponse authResponseConfig(
+        @RequestParam(required = false, value = "login") String login,
+        @RequestParam(required = false, value = "password") String password) {
         return new ChameleonAuthResponse(login, password);
     }
 

@@ -1,28 +1,23 @@
-let url = 'http://localhost:8083/auth';
+const uri = 'http://localhost:8083/auth';
+const httpRequest = new XMLHttpRequest();
 let playButton = document.querySelector('#play-button');
-let login = document.querySelector('#login');
-let password = document.querySelector('#pass');
 
-let user = {
-	login: login,
-	password: password,
-};
+playButton.addEventListener('click', buildLoginRequest);
 
-playButton.addEventListener('click', buildRequest);
+async function buildLoginRequest() {
+	let login = document.querySelector('.auth-login').value;
+	let password = document.querySelector('.auth-pass').value;
 
-async function buildRequest() {
-	console.log(login + ' ' + password);
-	try {
-		const response = await fetch(url, {
-			method: 'POST',
-			body: JSON.stringify(user),
-			headers: {
-				'Content-Type': 'application/json',
-			},
-		});
-		const json = await response.json();
-		console.log('Успех:', JSON.stringify(json));
-	} catch (error) {
-		console.error('Ошибка:', error);
-	}
+	let user = {
+		login: login,
+		password: password,
+	};
+
+	let url = uri + '?' + $.param(user);
+	httpRequest.open('POST', url);
+	httpRequest.setRequestHeader('Content-Type', 'application/json');
+	httpRequest.send();
+	console.log(user);
+	console.log(url);
+
 }
