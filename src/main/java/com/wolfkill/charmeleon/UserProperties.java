@@ -1,4 +1,4 @@
-package com.wolfkill.restservice;
+package com.wolfkill.charmeleon;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

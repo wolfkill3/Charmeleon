@@ -1,11 +1,11 @@
-package com.wolfkill.restservice;
+package com.wolfkill.charmeleon;
 
-public class ChameleonAuthResponse {
+public class CharmeleonAuthResponse {
 
 	private final String login;
 	private final String password;
 
-	public ChameleonAuthResponse(String login, String password) {
+	public CharmeleonAuthResponse(String login, String password) {
 		this.login = login;
 		this.password = password;
 	}
