@@ -22,7 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d198f9d4-424c-43c8-94c7-1b468ee83490" name="Default Changelist" comment="" />
+    <list default="true" id="d198f9d4-424c-43c8-94c7-1b468ee83490" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/chameleon2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/play.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/img/play.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,14 +47,43 @@
         <option value="Class" />
         <option value="Interface" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="2" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Add-regestry-page-frame" />
+                    <option name="lastUsedInstant" value="1621677298" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1621676474" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="hiddenUrls">
@@ -67,12 +102,6 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="125" />
-    <option name="width" value="1440" />
-    <option name="height" value="765" />
-  </component>
   <component name="ProjectId" id="1sN5JBLLeYN3tYc7HGe6ieReLy4" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -89,10 +118,23 @@
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/Вуз/1 Сем/Антонов/Лаба9/demo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static" />
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\css" />
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\html" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
@@ -166,8 +208,30 @@
       <workItem from="1621365692533" duration="2322000" />
       <workItem from="1621451034442" duration="393000" />
       <workItem from="1621451443932" duration="496000" />
-      <workItem from="1621669941382" duration="1566000" />
+      <workItem from="1621669941382" duration="14819000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1621676415402</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1621676415402</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add sing up board">
+      <created>1621681237727</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1621681237727</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Update sing up board">
+      <created>1621759836931</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1621759836931</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -189,6 +253,10 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="update" />
+    <MESSAGE value="Add sing up board" />
+    <MESSAGE value="Update sing up board" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update sing up board" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" width="1089" height="713" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620705829613">
@@ -203,6 +271,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="374" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1620703536810" />
+    <state x="753" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621762686971">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="753" y="185" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621762686971" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1621451709100">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -267,10 +339,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="189" height="457" key="HiddenNamespacesPopup/0.0.1536.824@0.0.1536.824" timestamp="1620705960598" />
+    <state x="579" y="115" key="RollbackChangesDialog" timestamp="1621676389611">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="579" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621676389611" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1621670825417">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1621670825417" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1621759839187">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1621759839187" />
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1620706030229">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

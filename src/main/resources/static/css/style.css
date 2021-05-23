@@ -1,0 +1,73 @@
+body {
+    background-color: bisque;
+    font-size: 18px;
+    font-family: "Century Gothic", fantasy;
+    margin: 0;
+}
+
+.sign-up {
+    margin: 0;
+    background-color: black;
+    min-height: 2.5em;
+}
+
+.sign-up-properties {
+    font-size: 30px;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    text-align: right;
+    color: burlywood;
+    text-decoration: none;
+}
+
+.preview-img{
+    width: 400px;
+    margin: 50px auto -97px 459px;
+
+}
+
+.auth {
+    width: 400px;
+    margin: -75px auto auto;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
+}
+
+.auth-properties {
+    padding-left: 5px;
+}
+
+.auth-login-board{
+    margin-bottom: 0;
+}
+
+.auth-login {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.auth-pass-board{
+    margin-top: -30px;
+}
+
+.auth-pass {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.play-img {
+    padding: 0;
+    margin: -25px 0 0 310px;
+    width: 80px;
+
+}
