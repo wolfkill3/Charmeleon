@@ -1,4 +1,4 @@
-package com.wolfkill.charmeleon;
+package com.wolfkill.charmeleon.application.user;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
