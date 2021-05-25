@@ -20,21 +20,22 @@ body {
     text-decoration: none;
 }
 
-.preview-img{
-    width: 400px;
-    margin: 50px auto -97px 459px;
-
+.preview-img {
+    position: absolute;
+    top: -112px;
+    left: 47px;
 }
 
 .auth {
     width: 400px;
-    margin: -75px auto auto;
     background-color: burlywood;
     padding: 10px;
     border-radius: 25px;
     border-color: black;
     border-style: groove;
     border-width: 5px;
+    margin: 300px auto auto;
+    position: relative;
 }
 
 .auth-properties {
@@ -69,5 +70,6 @@ body {
     padding: 0;
     margin: -25px 0 0 310px;
     width: 80px;
-
+    position: relative;
+    z-index: 10;
 }

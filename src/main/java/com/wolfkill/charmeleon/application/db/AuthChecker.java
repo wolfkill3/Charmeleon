@@ -5,24 +5,25 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.wolfkill.charmeleon.application.CharmeleonAuthResponse;
+import com.wolfkill.charmeleon.application.user.UserProperties;
 import com.wolfkill.charmeleon.application.user.UserRepository;
 
 public class AuthChecker {
     private static Logger logger = Logger.getLogger(AuthChecker.class.getName());
 
-    public static boolean checkAuthResponse(CharmeleonAuthResponse authResponse, UserRepository userRepository) {
-        AtomicBoolean returnStatus = new AtomicBoolean(false);
-        userRepository.findAll().forEach(userProperties -> {
+    public static UserProperties checkAuthResponse(CharmeleonAuthResponse authResponse, UserRepository userRepository) {
+        UserProperties user = null;
+        for (UserProperties userProperties : userRepository.findAll()) {
             if (authResponse.getLogin().equals(userProperties.getLogin())
                 && authResponse.getPassword().equals(userProperties.getPassword())) {
-                returnStatus.set(true);
+                user = userProperties;
             }
-        });
-        if (returnStatus.get()){
+        }
+        if (user != null) {
             logger.info("Пользователь найден");
         } else {
-            logger.log(Level.WARNING,"Пользователь не найден");
+            logger.log(Level.WARNING, "Пользователь не найден");
         }
-        return returnStatus.get();
+        return user;
     }
 }

@@ -23,13 +23,13 @@ public class CharmeleonController {
     private Logger logger = Logger.getLogger(CharmeleonController.class.getName());
 
     @PostMapping("/auth")
-    public void authResponse(
+    public UserProperties authResponse(
         @RequestParam(value = "login") String login,
         @RequestParam(value = "password") String password) {
         logger.info("login = " + login);
         logger.info("password = " + password);
         CharmeleonAuthResponse authResponse = new CharmeleonAuthResponse(login, password);
-        AuthChecker.checkAuthResponse(authResponse, userRepository);
+        return AuthChecker.checkAuthResponse(authResponse, userRepository);
     }
 
     @PostMapping(path = "/add")
