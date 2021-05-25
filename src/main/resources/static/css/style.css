@@ -22,8 +22,8 @@ body {
 
 .preview-img {
     position: absolute;
-    top: -112px;
-    left: 47px;
+    top: -60.5px;
+    left: 81px;
 }
 
 .auth {
@@ -44,6 +44,7 @@ body {
 
 .auth-login-board{
     margin-bottom: 0;
+    z-index: 10;
 }
 
 .auth-login {
@@ -56,6 +57,7 @@ body {
 
 .auth-pass-board{
     margin-top: -30px;
+    z-index: 10;
 }
 
 .auth-pass {
