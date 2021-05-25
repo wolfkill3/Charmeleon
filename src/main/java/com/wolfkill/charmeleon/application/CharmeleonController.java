@@ -1,8 +1,12 @@
-package com.wolfkill.charmeleon;
+package com.wolfkill.charmeleon.application;
 
 import java.util.logging.Logger;
 
+import com.wolfkill.charmeleon.application.db.AuthChecker;
+import com.wolfkill.charmeleon.application.user.UserProperties;
+import com.wolfkill.charmeleon.application.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @CrossOrigin
+@Component
 @RestController
 public class CharmeleonController {
     @Autowired
@@ -18,19 +23,13 @@ public class CharmeleonController {
     private Logger logger = Logger.getLogger(CharmeleonController.class.getName());
 
     @PostMapping("/auth")
-    public CharmeleonAuthResponse authResponse(
+    public void authResponse(
         @RequestParam(value = "login") String login,
         @RequestParam(value = "password") String password) {
         logger.info("login = " + login);
         logger.info("password = " + password);
-        return new CharmeleonAuthResponse(login, password);
-    }
-
-    @PostMapping("/auth-config")
-    public CharmeleonAuthResponse authResponseConfig(
-        @RequestParam(required = false, value = "login") String login,
-        @RequestParam(required = false, value = "password") String password) {
-        return new CharmeleonAuthResponse(login, password);
+        CharmeleonAuthResponse authResponse = new CharmeleonAuthResponse(login, password);
+        AuthChecker.checkAuthResponse(authResponse, userRepository);
     }
 
     @PostMapping(path = "/add")

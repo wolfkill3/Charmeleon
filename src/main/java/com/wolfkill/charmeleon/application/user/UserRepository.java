@@ -1,4 +1,4 @@
-package com.wolfkill.charmeleon;
+package com.wolfkill.charmeleon.application.user;
 
 import org.springframework.data.repository.CrudRepository;
 
