@@ -23,13 +23,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d198f9d4-424c-43c8-94c7-1b468ee83490" name="Default Changelist" comment="Fix">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/ResponseStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/Sex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/CharmeleonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/CharmeleonController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/db/AuthChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/db/AuthChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserProperties.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/background.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Add-alert-of-auth-result" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,6 +68,10 @@
             <RecentBranchesForRepo>
               <option name="branches">
                 <list>
+                  <RecentBranch>
+                    <option name="branchName" value="Add-background-image" />
+                    <option name="lastUsedInstant" value="1622316275" />
+                  </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="master" />
                     <option name="lastUsedInstant" value="1622295702" />
@@ -87,10 +87,6 @@
                   <RecentBranch>
                     <option name="branchName" value="Add-db-auth-response-confirm" />
                     <option name="lastUsedInstant" value="1621882644" />
-                  </RecentBranch>
-                  <RecentBranch>
-                    <option name="branchName" value="rename-project" />
-                    <option name="lastUsedInstant" value="1621800619" />
                   </RecentBranch>
                 </list>
               </option>
@@ -145,20 +141,20 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.wolfkill.charmeleon" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wolfkill.restservice" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\css" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\html" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wolfkill.charmeleon" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wolfkill.restservice" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -238,6 +234,7 @@
       <workItem from="1621451034442" duration="393000" />
       <workItem from="1621451443932" duration="496000" />
       <workItem from="1621669941382" duration="50464000" />
+      <workItem from="1622311323175" duration="2231000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1621676415402</created>
@@ -388,54 +385,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="451" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621671519165" />
-    <state width="1177" height="231" key="GridCell.Tab.0.bottom" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.0.bottom" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.0.center" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.0.center" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.0.left" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.0.left" timestamp="1622316310380">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.0.right" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622316310380" />
+    <state width="1177" height="182" key="GridCell.Tab.0.right" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.1.bottom" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.1.bottom" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.1.center" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.1.center" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.1.left" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.1.left" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.1.right" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.1.right" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.2.bottom" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.2.bottom" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.2.center" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.2.center" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.2.left" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.2.left" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
-    <state width="1177" height="231" key="GridCell.Tab.2.right" timestamp="1622295711317">
+    <state width="1177" height="182" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
+    <state width="1177" height="182" key="GridCell.Tab.2.right" timestamp="1622316310381">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="231" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="182" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1622316310381" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1620705960598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -456,6 +453,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="668" y="289" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.0.1536.824@0.0.1536.824" timestamp="1620706030229" />
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1622314847426">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1622314847426" />
     <state x="478" y="145" width="579" height="534" key="find.popup" timestamp="1621798271070">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
