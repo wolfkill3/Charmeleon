@@ -26,7 +26,6 @@
       <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/ResponseStatus.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/Sex.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/CharmeleonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/CharmeleonController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/db/AuthChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/db/AuthChecker.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wolfkill/charmeleon/application/user/UserProperties.java" afterDir="false" />
@@ -59,7 +58,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="Add-alert-of-auth-result" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,12 +73,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="Add-wrapper-for-user" />
-                    <option name="lastUsedInstant" value="1622225025" />
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1622295702" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1622224874" />
+                    <option name="branchName" value="Add-wrapper-for-user" />
+                    <option name="lastUsedInstant" value="1622225025" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="Add-fetching-server-auth-response" />
@@ -138,7 +137,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/BIC/DuckBill/sentinel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/webapp/signup" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.15" />
@@ -146,20 +145,20 @@
     <property name="settings.editor.selected.configurable" value="web.server" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.wolfkill.charmeleon" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wolfkill.restservice" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\css" />
       <recent name="C:\Chameleon\chameleon\src\main\resources\static\html" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.wolfkill.charmeleon" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wolfkill.restservice" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Chameleon\chameleon\src\main\resources\static\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,6 +212,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GreetingControllerTests" />
         <item itemvalue="JUnit.GreetingControllerTests" />
         <item itemvalue="JUnit.GreetingControllerTests" />
         <item itemvalue="JUnit.GreetingControllerTests" />
@@ -388,54 +388,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="451" y="117" key="Github.UntrackedFilesDialog/0.0.1536.824@0.0.1536.824" timestamp="1621671519165" />
-    <state width="1177" height="180" key="GridCell.Tab.0.bottom" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.0.bottom" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.0.center" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.0.center" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.0.left" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.0.left" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.0.right" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.0.right" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.1.bottom" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.1.bottom" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.1.center" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.1.center" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.1.left" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.1.left" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.1.right" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.1.right" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.2.bottom" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.2.bottom" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.2.center" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.2.center" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.2.left" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.2.left" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
-    <state width="1177" height="180" key="GridCell.Tab.2.right" timestamp="1622231357563">
+    <state width="1177" height="231" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
+    <state width="1177" height="231" key="GridCell.Tab.2.right" timestamp="1622295711317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1177" height="180" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1622231357563" />
+    <state width="1177" height="231" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1622295711317" />
     <state width="189" height="457" key="HiddenNamespacesPopup" timestamp="1620705960598">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
