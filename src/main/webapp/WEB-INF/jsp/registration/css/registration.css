@@ -1,5 +1,5 @@
 body {
-    background: no-repeat url("../img/background.jpg");
+    background: no-repeat url("../../img/background.jpg");
     background-size: 100% 200%;
     font-size: 18px;
     font-family: "Century Gothic", fantasy;
@@ -76,29 +76,4 @@ body {
     width: 80px;
     position: relative;
     z-index: 10;
-}
-
-.alert {
-    width: 195px;
-    height: 26px;
-    border-radius: 25px;
-    border-style: groove;
-    border-color: burlywood;
-    border-width: 0;
-    margin-top: 15px;
-    margin-left: 185px;
-}
-
-.alert-text {
-    text-align: center;
-    font-size: 20px;
-    color: gold;
-    text-shadow: 2px 2px black;
-    margin: 0;
-}
-
-.remember {
-    margin-left: -191px;
-    margin-bottom: -22px;
-    margin-top: 0;
 }

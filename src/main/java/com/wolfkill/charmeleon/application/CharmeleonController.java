@@ -8,6 +8,7 @@ import com.wolfkill.charmeleon.application.user.UserProperties;
 import com.wolfkill.charmeleon.application.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -34,7 +35,7 @@ public class CharmeleonController {
         return AuthChecker.checkAuthResponse(authResponse, userRepository);
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public @ResponseBody
     String addNewUser(@RequestBody UserData userData) {
         userRepository.save(userData);
