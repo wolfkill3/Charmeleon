@@ -10,13 +10,13 @@ public class CharmeleonPageController {
 
     @RequestMapping(value = "/registration", method = RequestMethod.GET)
     public String registrationPage(Model model) {
-        model.addAttribute("registration","hello world");
+        //model.addAttribute("registration","hello world");
         return "registration";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String loginPage(Model model) {
-        model.addAttribute("registration","hello world");
+        //model.addAttribute("registration","hello world");
         return "login";
     }
 }

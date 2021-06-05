@@ -8,7 +8,6 @@ import com.wolfkill.charmeleon.application.user.UserProperties;
 import com.wolfkill.charmeleon.application.user.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -31,15 +30,18 @@ public class CharmeleonController {
     public UserProperties authResponse(
         @RequestParam(value = "login") String login,
         @RequestParam(value = "password") String password) {
-        CharmeleonAuthResponse authResponse = new CharmeleonAuthResponse(login, password);
+        CharmeleonLoginProperties authResponse = new CharmeleonLoginProperties(login, password);
         return AuthChecker.checkAuthResponse(authResponse, userRepository);
     }
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public @ResponseBody
-    String addNewUser(@RequestBody UserData userData) {
-        userRepository.save(userData);
-        return "Saved";
+    ResponseStatus addNewUser(@RequestBody UserData userData) {
+        UserProperties userProperties = AuthChecker.checkRegistrationResponse(userData, userRepository);
+        if (userProperties.responseStatus == ResponseStatus.NOT_USED) {
+            userRepository.save(userData);
+        }
+        return userProperties.responseStatus;
     }
 
     @GetMapping(path = "/all")

@@ -22,22 +22,34 @@
         <img class="preview-img" src="img/chameleon2.png" alt="404 not found">
     </div>
     <h2 class="auth-properties">Sign Up</h2>
-    <p class="auth-login-board">
-        <label>
-            <input id="login" class="auth-login" type="text" maxlength="25" size="40" value="login">
-        </label>
+    <p class="auth-email-board" title="Enter the e-mail">
+    <div class="auth-text">Enter the e-mail</div>
+    <label>
+        <input id="email" class="auth-email" type="text" maxlength="25" size="40" value="">
+    </label>
+    </p>
+    <p class="auth-login-board" title="Enter the login">
+    <div class="auth-text">Enter the login</div>
+    <label>
+        <input id="login" class="auth-login" type="text" maxlength="25" size="40" value="">
+    </label>
     </p>
     <input id="play-button" class="play-img" type="image" src="img/play.png">
-    <p class="auth-pass-board">
-        <label>
-            <input id="pass" class="auth-pass" type="password" maxlength="25" size="40" value="password">
-        </label>
+    <p class="auth-pass-board" title="Enter the password">
+    <div class="auth-text-after-picture">Enter the password</div>
+    <label>
+        <input id="pass" class="auth-pass" type="password" maxlength="25" size="40" value="">
+    </label>
     </p>
-    <p class="auth-pass--confirm-board">
-        <label>
-            <input id="pass-confirm" class="auth-pass" type="password" maxlength="25" size="40" value="password">
-        </label>
+    <p class="auth-pass-confirm-board" title="Confirm the password">
+    <div class="auth-text">Confirm the password</div>
+    <label>
+        <input id="pass-confirm" class="auth-pass-confirm" type="password" maxlength="25" size="40" value="">
+    </label>
     </p>
+    <div class="alert">
+        <p class="alert-text"></p>
+    </div>
 </div>
 <script type="text/javascript">
 	<%@ include file="registration/js/registration.js" %>

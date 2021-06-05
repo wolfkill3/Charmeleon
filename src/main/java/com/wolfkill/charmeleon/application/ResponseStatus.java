@@ -5,5 +5,7 @@ public enum ResponseStatus {
     NOT_CONFIRMED,
     ERROR,
     FULL,
-    NOT_FULL
+    NOT_FULL,
+    USED,
+    NOT_USED
 }
