@@ -2,6 +2,7 @@ const uri = 'http://localhost:8083/auth';
 let playButton = document.querySelector('#play-button');
 let alertText = document.querySelector('.alert-text');
 let alert = document.querySelector('.alert');
+//document.location.href = "/login";
 
 playButton.addEventListener('click', async () => {
 	let login = document.querySelector('.auth-login').value;

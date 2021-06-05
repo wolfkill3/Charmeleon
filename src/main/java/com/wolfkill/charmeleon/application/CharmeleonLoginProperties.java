@@ -1,11 +1,11 @@
 package com.wolfkill.charmeleon.application;
 
-public class CharmeleonAuthResponse {
+public class CharmeleonLoginProperties {
 
 	private String login;
 	private String password;
 
-	public CharmeleonAuthResponse(String login, String password) {
+	public CharmeleonLoginProperties(String login, String password) {
 		this.login = login;
 		this.password = password;
 	}

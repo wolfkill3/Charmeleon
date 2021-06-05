@@ -1,0 +1,124 @@
+body {
+    background: no-repeat url("img/background.jpg");
+    background-size: 100% 200%;
+    font-size: 18px;
+    font-family: "Century Gothic", fantasy;
+    margin: 0;
+}
+
+.sign-up {
+    margin: 0;
+    background-color: black;
+    min-height: 2.5em;
+}
+
+.sign-up-properties {
+    font-size: 30px;
+    margin: 0 5px 0 0;
+    padding: 10px;
+    text-align: right;
+    color: burlywood;
+    text-decoration: none;
+}
+
+.preview-img {
+    position: absolute;
+    top: -60.5px;
+    left: 81px;
+}
+
+.auth {
+    width: 400px;
+    background-color: burlywood;
+    padding: 10px;
+    border-radius: 25px;
+    border-color: black;
+    border-style: groove;
+    border-width: 5px;
+    margin: 300px auto auto;
+    position: relative;
+}
+
+.auth-properties {
+    padding-left: 5px;
+}
+
+.auth-login-board {
+    margin-bottom: 0;
+    z-index: 10;
+}
+
+.auth-login {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.auth-pass-board {
+    margin-top: -30px;
+    z-index: 10;
+    margin-bottom: 0;
+}
+
+.auth-pass {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.auth-pass-confirm {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.auth-email {
+    font-family: "Century Gothic", Serif, serif;
+    color: black;
+    background-color: bisque;
+    border-radius: 10px;
+    padding-left: 15px;
+}
+
+.play-img {
+    padding: 0;
+    margin: -25px 0 0 310px;
+    width: 80px;
+    position: relative;
+    z-index: 10;
+}
+
+.auth-text {
+    margin-left: 5px;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.auth-text-after-picture {
+    margin-top: -75px;
+}
+
+.alert {
+    width: 375px;
+    height: auto;
+    border-radius: 25px;
+    border-style: groove;
+    border-color: burlywood;
+    border-width: 0;
+    margin-top: 15px;
+    margin-left: 0px;
+}
+
+.alert-text {
+    text-align: center;
+    top: 50%;
+    font-size: 20px;
+    color: gold;
+    text-shadow: 2px 2px black;
+}

@@ -30,15 +30,18 @@ public class CharmeleonController {
     public UserProperties authResponse(
         @RequestParam(value = "login") String login,
         @RequestParam(value = "password") String password) {
-        CharmeleonAuthResponse authResponse = new CharmeleonAuthResponse(login, password);
+        CharmeleonLoginProperties authResponse = new CharmeleonLoginProperties(login, password);
         return AuthChecker.checkAuthResponse(authResponse, userRepository);
     }
 
-    @RequestMapping(value = "/add", method = RequestMethod.POST)
+    @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public @ResponseBody
-    String addNewUser(@RequestBody UserData userData) {
-        userRepository.save(userData);
-        return "Saved";
+    ResponseStatus addNewUser(@RequestBody UserData userData) {
+        UserProperties userProperties = AuthChecker.checkRegistrationResponse(userData, userRepository);
+        if (userProperties.responseStatus == ResponseStatus.NOT_USED) {
+            userRepository.save(userData);
+        }
+        return userProperties.responseStatus;
     }
 
     @GetMapping(path = "/all")

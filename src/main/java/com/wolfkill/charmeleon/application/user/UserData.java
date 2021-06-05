@@ -14,13 +14,16 @@ public class UserData {
     private String login;
     private String password;
     private String link;
+    private String email;
     private String firstName;
     private String secondName;
     private String thirdName;
     private Sex sex;
-    private Date dateOfBirth;
+    private Integer dayOfBirth;
+    private Integer monthOfBirth;
+    private Integer yearOfBirth;
 
-    void setId(final Integer id) {
+    public void setId(final Integer id) {
         this.id = id;
     }
 
@@ -84,11 +87,53 @@ public class UserData {
         this.sex = sex;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public String getEmail() {
+        return email;
     }
 
-    public void setDateOfBirth(final Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setEmail(final String email) {
+        this.email = email;
+    }
+
+    public Integer getDayOfBirth() {
+        return dayOfBirth;
+    }
+
+    public void setDayOfBirth(final Integer dayOfBirth) {
+        this.dayOfBirth = dayOfBirth;
+    }
+
+    public Integer getMonthOfBirth() {
+        return monthOfBirth;
+    }
+
+    public void setMonthOfBirth(final Integer monthOfBirth) {
+        this.monthOfBirth = monthOfBirth;
+    }
+
+    public Integer getYearOfBirth() {
+        return yearOfBirth;
+    }
+
+    public void setYearOfBirth(final Integer yearOfBirth) {
+        this.yearOfBirth = yearOfBirth;
+    }
+
+    @Override
+    public String toString() {
+        return "UserData{" +
+               "id=" + id +
+               ", login='" + login + '\'' +
+               ", password='" + password + '\'' +
+               ", link='" + link + '\'' +
+               ", email='" + email + '\'' +
+               ", firstName='" + firstName + '\'' +
+               ", secondName='" + secondName + '\'' +
+               ", thirdName='" + thirdName + '\'' +
+               ", sex=" + sex +
+               ", dayOfBirth=" + dayOfBirth +
+               ", monthOfBirth=" + monthOfBirth +
+               ", yearOfBirth=" + yearOfBirth +
+               '}';
     }
 }
