@@ -12,7 +12,8 @@ import com.wolfkill.charmeleon.application.user.UserRepository;
 public class AuthChecker {
     private static Logger logger = Logger.getLogger(AuthChecker.class.getName());
 
-    public static UserProperties checkAuthResponse(CharmeleonLoginProperties loginProperties, UserRepository userRepository) {
+    public static UserProperties checkAuthResponse(CharmeleonLoginProperties loginProperties,
+                                                   UserRepository userRepository) {
         UserProperties userProperties = new UserProperties();
         userProperties.userData = findUser(loginProperties, userRepository);
         if (userProperties.userData != null) {

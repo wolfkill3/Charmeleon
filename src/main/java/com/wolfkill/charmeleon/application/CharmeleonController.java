@@ -1,5 +1,6 @@
 package com.wolfkill.charmeleon.application;
 
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import com.wolfkill.charmeleon.application.db.AuthChecker;
@@ -29,9 +30,15 @@ public class CharmeleonController {
     @PostMapping("/auth")
     public UserProperties authResponse(
         @RequestParam(value = "login") String login,
-        @RequestParam(value = "password") String password) {
+        @RequestParam(value = "password") String password,
+        @RequestParam(value = "cookie") String cookie) {
         CharmeleonLoginProperties authResponse = new CharmeleonLoginProperties(login, password);
-        return AuthChecker.checkAuthResponse(authResponse, userRepository);
+        UserProperties userProperties = AuthChecker.checkAuthResponse(authResponse, userRepository);
+        if (userProperties.responseStatus == ResponseStatus.CONFIRMED) {
+            userProperties.personalCookie = cookie;
+            logger.log(Level.INFO,"cookie = " + cookie);
+        }
+        return userProperties;
     }
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
