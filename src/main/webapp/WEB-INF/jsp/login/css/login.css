@@ -1,5 +1,5 @@
 body {
-    background: no-repeat url("img/background.jpg");
+    background: no-repeat url("./img/background.jpg");
     background-size: 100% 200%;
     font-size: 18px;
     font-family: "Century Gothic", fantasy;

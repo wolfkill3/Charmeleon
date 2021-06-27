@@ -1,0 +1,83 @@
+body {
+    background: no-repeat url("./img/lkbackground.jpg");
+    background-size: 100% 100%;
+    font-size: 18px;
+    font-family: "Century Gothic", fantasy;
+    margin: 0;
+}
+
+/* Боковое навигационное меню */
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    /*background-color: #f1f1f1;*/
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+
+/* Сайдбар ссылки */
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* Активная/текущая ссылка */
+.sidebar a.active {
+    background-color: #F4EDDD;
+    color: black;
+    /*border-radius: 25px;*/
+    /*border-color: black;*/
+    /*border-style: groove;*/
+    /*border-width: 2px;*/
+}
+
+/* Ссылки при наведении мыши */
+.sidebar a:hover:not(.active) {
+    background-color: #F4EDDD;
+    color: black;
+}
+
+/* Содержание страницы. Значение свойства margin-left должно соответствовать значению свойства width боковой панели */
+div.main-page {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+/* На экранах шириной менее 700 пикселей превратить боковую панель в верхнюю панель */
+@media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+}
+
+/* На экранах размером менее 400 пикселей панель отображать вертикально, а не горизонтально */
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
+
+.information {
+    width: 75%;
+    height: 100%;
+    background-color: #F4EDDD;
+    /*padding: 10px;*/
+    /*border-radius: 25px;*/
+    /*border-color: black;*/
+    /*border-style: groove;*/
+    /*border-width: 2px;*/
+    margin: auto auto auto 100px;
+    position: relative;
+}
