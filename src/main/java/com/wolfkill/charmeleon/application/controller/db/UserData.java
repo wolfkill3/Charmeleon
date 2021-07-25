@@ -1,10 +1,11 @@
-package com.wolfkill.charmeleon.application.user;
+package com.wolfkill.charmeleon.application.controller.db;
 
-import java.sql.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+
+import com.wolfkill.charmeleon.application.user.properties.Gender;
 
 @Entity
 public class UserData {
@@ -18,7 +19,7 @@ public class UserData {
     private String firstName;
     private String secondName;
     private String thirdName;
-    private Sex sex;
+    private Gender gender;
     private Integer dayOfBirth;
     private Integer monthOfBirth;
     private Integer yearOfBirth;
@@ -79,12 +80,12 @@ public class UserData {
         this.thirdName = thirdName;
     }
 
-    public Sex getSex() {
-        return sex;
+    public Gender getSex() {
+        return gender;
     }
 
-    public void setSex(final Sex sex) {
-        this.sex = sex;
+    public void setSex(final Gender gender) {
+        this.gender = gender;
     }
 
     public String getEmail() {
@@ -130,7 +131,7 @@ public class UserData {
                ", firstName='" + firstName + '\'' +
                ", secondName='" + secondName + '\'' +
                ", thirdName='" + thirdName + '\'' +
-               ", sex=" + sex +
+               ", sex=" + gender +
                ", dayOfBirth=" + dayOfBirth +
                ", monthOfBirth=" + monthOfBirth +
                ", yearOfBirth=" + yearOfBirth +
