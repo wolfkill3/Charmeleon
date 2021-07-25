@@ -1,12 +1,16 @@
-package com.wolfkill.charmeleon.application;
+package com.wolfkill.charmeleon.application.controller;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.wolfkill.charmeleon.application.db.AuthChecker;
-import com.wolfkill.charmeleon.application.user.UserData;
-import com.wolfkill.charmeleon.application.user.UserProperties;
-import com.wolfkill.charmeleon.application.user.UserRepository;
+import com.wolfkill.charmeleon.application.controller.db.AuthChecker;
+import com.wolfkill.charmeleon.application.controller.db.UserData;
+import com.wolfkill.charmeleon.application.controller.db.UserRepository;
+import com.wolfkill.charmeleon.application.user.AbstractUserFactory;
+import com.wolfkill.charmeleon.application.user.User;
+import com.wolfkill.charmeleon.application.user.UserFactory;
+import com.wolfkill.charmeleon.application.user.properties.UserAccess;
+import com.wolfkill.charmeleon.application.user.properties.UserProperties;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -44,7 +48,9 @@ public class CharmeleonController {
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public @ResponseBody
     ResponseStatus addNewUser(@RequestBody UserData userData) {
-        UserProperties userProperties = AuthChecker.checkRegistrationResponse(userData, userRepository);
+        AbstractUserFactory userFactory = new UserFactory(UserAccess.DEFAULT);
+        User user = userFactory.createUser(userData);
+        UserProperties userProperties = AuthChecker.checkRegistrationResponse(user, userRepository);
         if (userProperties.responseStatus == ResponseStatus.NOT_USED) {
             userRepository.save(userData);
         }

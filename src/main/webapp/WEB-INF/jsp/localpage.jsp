@@ -13,10 +13,8 @@
 <body>
 <!-- Сайдбар -->
 <div class="sidebar">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
+    <a class="home" href="#home">Home</a>
+    <a class="delivery" href="#delivery">Delivery</a>
 </div>
 
 <!-- Содержимое страницы -->

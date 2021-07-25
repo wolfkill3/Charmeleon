@@ -28,7 +28,7 @@ body {
 }
 
 /* Активная/текущая ссылка */
-.sidebar a.active {
+.sidebar a.home {
     background-color: #F4EDDD;
     color: black;
     /*border-radius: 25px;*/
@@ -38,7 +38,7 @@ body {
 }
 
 /* Ссылки при наведении мыши */
-.sidebar a:hover:not(.active) {
+.sidebar a:hover:not(.home) {
     background-color: #F4EDDD;
     color: black;
 }

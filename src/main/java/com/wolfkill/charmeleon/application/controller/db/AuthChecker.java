@@ -1,13 +1,12 @@
-package com.wolfkill.charmeleon.application.db;
+package com.wolfkill.charmeleon.application.controller.db;
 
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.wolfkill.charmeleon.application.CharmeleonLoginProperties;
-import com.wolfkill.charmeleon.application.ResponseStatus;
-import com.wolfkill.charmeleon.application.user.UserData;
-import com.wolfkill.charmeleon.application.user.UserProperties;
-import com.wolfkill.charmeleon.application.user.UserRepository;
+import com.wolfkill.charmeleon.application.controller.CharmeleonLoginProperties;
+import com.wolfkill.charmeleon.application.controller.ResponseStatus;
+import com.wolfkill.charmeleon.application.user.User;
+import com.wolfkill.charmeleon.application.user.properties.UserProperties;
 
 public class AuthChecker {
     private static Logger logger = Logger.getLogger(AuthChecker.class.getName());
@@ -26,9 +25,9 @@ public class AuthChecker {
         return userProperties;
     }
 
-    public static UserProperties checkRegistrationResponse(UserData userData, UserRepository userRepository) {
+    public static UserProperties checkRegistrationResponse(User user, UserRepository userRepository) {
         UserProperties userProperties = new UserProperties();
-        CharmeleonLoginProperties loginProperties = new CharmeleonLoginProperties(userData.getLogin(), userData.getPassword());
+        CharmeleonLoginProperties loginProperties = new CharmeleonLoginProperties(user.getUserData().getLogin(), user.getUserData().getPassword());
         userProperties.userData = findUser(loginProperties, userRepository);
         if (userProperties.userData != null) {
             logger.info("Пользователь найден");
@@ -41,11 +40,10 @@ public class AuthChecker {
     }
 
     private static UserData findUser(final CharmeleonLoginProperties loginProperties, final UserRepository userRepository) {
-        for (UserData userData : userRepository.findAll()) {
-            if (loginProperties.getLogin().equals(userData.getLogin())
-                && loginProperties.getPassword().equals(userData.getPassword())) {
-                System.out.println("найден");
-                return userData;
+        for (UserData user : userRepository.findAll()) {
+            if (loginProperties.getLogin().equals(user.getLogin())
+                && loginProperties.getPassword().equals(user.getPassword())) {
+                return user;
             }
         }
         return null;

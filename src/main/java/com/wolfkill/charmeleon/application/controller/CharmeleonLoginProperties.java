@@ -1,4 +1,4 @@
-package com.wolfkill.charmeleon.application;
+package com.wolfkill.charmeleon.application.controller;
 
 public class CharmeleonLoginProperties {
 
